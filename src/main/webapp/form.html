@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>表单练习</title>
+</head>
+<body>
+<form action="processForm.jsp" method="post">
+    <h2>用户信息</h2>
+    <label>用户名:</label>
+    <input type="text" name="username" size="20"><br>
+
+    <label>密码:</label>
+    <input type="password" name="password" size="20"><br>
+
+    <h2>个人偏好</h2>
+    <p>职业:</p>
+    <input type="radio" name="occupation" value="工人" checked>工人
+    <input type="radio" name="occupation" value="农民">农民
+    <input type="radio" name="occupation" value="军人">军人<br>
+
+    <p>请选择你的爱好:</p>
+    <input type="checkbox" name="hobby" value="音乐">音乐
+    <input type="checkbox" name="hobby" value="旅游">旅游
+    <input type="checkbox" name="hobby" value="读书">读书<br>
+
+    <p>留言:</p>
+    <textarea rows="4" cols="30" name="message"></textarea><br>
+
+    <h2>联系偏好</h2>
+    <label>首选电子邮件服务:</label>
+    <select name="emailService">
+        <option value="163">163</option>
+        <option value="263">263</option>
+        <option value="sina">sina</option>
+    </select><br>
+
+    <input type="submit" value="提交">
+    <input type="reset" value="全部重写">
+</form>
+</body>
+</html>
